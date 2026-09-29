@@ -518,6 +518,59 @@ img {
   gap: 26px;
 }
 
+.feedback-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.feedback-safety-note {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid #d89b45;
+  border-radius: 0.35rem;
+  background: #fff8eb;
+  color: #5a4527;
+  line-height: 1.5;
+}
+
+.feedback-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.feedback-consent input {
+  flex: 0 0 auto;
+  margin-top: 0.25rem;
+}
+
+.feedback-submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  transform: none;
+}
+
+.feedback-status {
+  min-height: 1.5em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.feedback-status--success {
+  color: #267344;
+}
+
+.feedback-status--error {
+  color: #a12d2d;
+}
+
 .form-field {
   display: grid;
   gap: 10px;

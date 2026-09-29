@@ -120,6 +120,11 @@ Por meio do Guardiões da Infância, buscamos levar informação de maneira aces
       </div>
 
       <form class="feedback-form" id="feedback-form">
+        <div class="feedback-honeypot" aria-hidden="true">
+          <label for="feedback-website">Não preencha este campo</label>
+          <input type="text" id="feedback-website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
         <label class="form-field" for="feedback-name">
           <span>Seu nome</span>
           <input type="text" id="feedback-name" name="name" autocomplete="name"
@@ -150,7 +155,18 @@ Por meio do Guardiões da Infância, buscamos levar informação de maneira aces
             placeholder="Escreva sua sugestão, elogio ou o que podemos melhorar..." required></textarea>
         </label>
 
+        <p class="feedback-safety-note">
+          Não informe dados pessoais ou relatos que exijam atendimento emergencial. Este formulário recebe apenas
+          opiniões sobre o site.
+        </p>
+
+        <label class="feedback-consent">
+          <input type="checkbox" name="consent" value="sim" required />
+          <span>Concordo que este feedback seja armazenado para ajudar a melhorar o projeto.</span>
+        </label>
+
         <button class="feedback-submit" type="submit">Enviar feedback</button>
+        <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
       </form>
     </section>
 
