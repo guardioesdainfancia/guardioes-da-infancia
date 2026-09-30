@@ -6,8 +6,7 @@ const currentYear = document.querySelector("#current-year");
 const feedbackStatus = document.querySelector("#feedback-status");
 const feedbackSubmit = feedbackForm.querySelector("button[type='submit']");
 
-// Cole aqui a URL /exec gerada ao publicar o Google Apps Script como aplicativo da Web.
-const FEEDBACK_ENDPOINT = "";
+const FEEDBACK_ENDPOINT = "https://script.google.com/macros/s/AKfycbw1TLzhIuqfIY-O9uIsBOsVTD708volYgiBLvfn9sAr95gPvaBaHAF7mL08disVI_8pgA/exec";
 
 currentYear.textContent = new Date().getFullYear();
 
